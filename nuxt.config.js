@@ -17,6 +17,7 @@ export default {
 
   // Global CSS (https://go.nuxtjs.dev/config-css)
   css: [
+    '~/assets/css/reboot.css'
   ],
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
@@ -36,7 +37,20 @@ export default {
 
   // Modules (https://go.nuxtjs.dev/config-modules)
   modules: [
+    '@nuxtjs/style-resources',
+    '@nuxtjs/gtm'
   ],
+
+  gtm: {
+    id: 'UA-23109171-1',
+    pageTracking: true
+  },
+
+  styleResources: {
+    scss: [
+      'assets/scss/_variables.scss',
+    ]
+  },
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {

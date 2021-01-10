@@ -4,59 +4,74 @@
   </div>
 </template>
 
-<style>
-html {
-  font-family:
-    'Source Sans Pro',
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    Roboto,
-    'Helvetica Neue',
-    Arial,
-    sans-serif;
-  font-size: 16px;
-  word-spacing: 1px;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  box-sizing: border-box;
-}
-
+<style lang="scss">
 *,
 *::before,
 *::after {
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 10px;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
   box-sizing: border-box;
-  margin: 0;
+  background-color: $white;
 }
 
-.button--green {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #3b8070;
-  color: #3b8070;
-  text-decoration: none;
-  padding: 10px 30px;
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-size: 1.8rem;
+  line-height: 1.5;
+  font-weight: 400;
+  padding: 0;
+  background-color: $white;
+
+  #__nuxt,
+  #__layout,
+  #__layout > * {
+    flex: 1 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #main {
+    flex-grow: 1;
+  }
 }
 
-.button--green:hover {
-  color: #fff;
-  background-color: #3b8070;
+img,
+svg,
+video {
+  max-width: 100%;
+  height: auto;
 }
 
-.button--grey {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #35495e;
-  color: #35495e;
-  text-decoration: none;
-  padding: 10px 30px;
-  margin-left: 15px;
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
 }
 
-.button--grey:hover {
-  color: #fff;
-  background-color: #35495e;
+.a11y-only,
+.u-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.u-container {
+  margin: 0 auto;
+  max-width: 144rem;
 }
 </style>
