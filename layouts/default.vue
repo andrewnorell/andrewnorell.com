@@ -41,6 +41,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  min-height: -webkit-fill-available;
   font-size: 1.8rem;
   line-height: 1.5;
   font-weight: 400;
@@ -69,10 +70,10 @@ body {
     background-image: url('~assets/images/border.svg');
     background-repeat: repeat-x;
     background-position: center bottom;
-    padding: 6.4rem 2rem;
+    padding: 6.4rem 3.2rem;
 
     @media (min-width: $screen-sm-min) {
-      padding: 12.8rem 2rem;
+      padding: 12.8rem 3.2rem;
     }
   }
 }
