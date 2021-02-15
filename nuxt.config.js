@@ -4,14 +4,23 @@ export default {
 
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
-    title: 'andrewnorell.com',
+    title: 'Andrew Norell',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' }
+      { hid: 'description', name: 'description', content: 'I’m Andrew Norell, a Tech Lead and Product Owner with frontend chops living in Minneapolis, MN.' },
+      { name: 'author', content: 'Andrew Norell' },
+      { property: 'og:image', content: 'https://andrewnorell.com/tile-og.png' },
+      { property: 'og:title', content: 'Andrew Norell' },
+      {
+        property: 'og:description',
+        content: 'I’m Andrew Norell, a Tech Lead and Product Owner with frontend chops living in Minneapolis, MN.'
+      },
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/png', href: '/favicon.png' },
+      { rel: 'preconnect', href: 'https://fonts.gstatic.com' },
+      { rel: 'stylesheet', type: 'text/css', href: 'https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap' }
     ]
   },
 

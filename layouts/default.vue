@@ -1,6 +1,8 @@
 <template>
   <div>
-    <Nuxt />
+    <main>
+      <Nuxt />
+    </main>
   </div>
 </template>
 
@@ -16,7 +18,23 @@ html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   box-sizing: border-box;
-  background-color: $white;
+  background: linear-gradient(135deg, rgba(255, 172, 198, 0.7) 2.88%, rgba(182, 224, 245, 0.7) 100%);
+  animation: BackgroundGradient 6s ease infinite;
+  background-size: 400% 400%;
+}
+
+@keyframes BackgroundGradient {
+  0% {
+    background-position: 50% 0%;
+  }
+
+  50% {
+    background-position: 51% 100%;
+  }
+
+  100% {
+    background-position: 50% 0%;
+  }
 }
 
 body {
@@ -27,7 +45,7 @@ body {
   line-height: 1.5;
   font-weight: 400;
   padding: 0;
-  background-color: $white;
+  background-color: transparent;
 
   #__nuxt,
   #__layout,
@@ -37,8 +55,25 @@ body {
     flex-direction: column;
   }
 
-  #main {
+  #__nuxt {
+    background-image: url('~assets/images/border.svg');
+    background-repeat: repeat-x;
+    background-position: center top;
+  }
+
+  main {
     flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url('~assets/images/border.svg');
+    background-repeat: repeat-x;
+    background-position: center bottom;
+    padding: 6.4rem 2rem;
+
+    @media (min-width: $screen-sm-min) {
+      padding: 12.8rem 2rem;
+    }
   }
 }
 
