@@ -1,6 +1,6 @@
 <template>
   <div class="u-container">
-    <h1>👋 <br>I’m Andrew Norell, a Tech Lead, Product Owner, and Frontend Dev living in Minneapolis, MN.</h1>
+    <h1>👋 <br>I’m Andrew Norell, a Tech Lead and Product Owner with a frontend dev background living in Minneapolis, MN.</h1>
     <a href="https://www.linkedin.com/in/andrewnorell/" title="Andrew Norell on LinkedIn">
       <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
         <g clip-path="url(#clip0)" fill="#46025D">
