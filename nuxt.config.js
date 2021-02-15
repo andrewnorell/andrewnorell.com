@@ -8,13 +8,13 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'I’m Andrew Norell, a Tech Lead and Product Owner with frontend chops living in Minneapolis, MN.' },
+      { hid: 'description', name: 'description', content: 'I’m Andrew Norell, a Tech Lead, Product Owner, and Frontend Dev living in Minneapolis, MN.' },
       { name: 'author', content: 'Andrew Norell' },
       { property: 'og:image', content: 'https://andrewnorell.com/tile-og.jpg' },
       { property: 'og:title', content: 'Andrew Norell' },
       {
         property: 'og:description',
-        content: 'I’m Andrew Norell, a Tech Lead and Product Owner with frontend chops living in Minneapolis, MN.'
+        content: 'I’m Andrew Norell, a Tech Lead, Product Owner, and Frontend Dev living in Minneapolis, MN.'
       },
     ],
     link: [
