@@ -18,7 +18,7 @@
 
 <style lang="scss">
   .u-container {
-    max-width: 72rem;
+    max-width: 78rem;
     margin: 0 auto;
   }
 </style>
