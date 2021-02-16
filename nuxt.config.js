@@ -46,14 +46,8 @@ export default {
 
   // Modules (https://go.nuxtjs.dev/config-modules)
   modules: [
-    '@nuxtjs/style-resources',
-    '@nuxtjs/gtm'
+    '@nuxtjs/style-resources'
   ],
-
-  gtm: {
-    id: 'UA-23109171-1',
-    pageTracking: true
-  },
 
   styleResources: {
     scss: [
