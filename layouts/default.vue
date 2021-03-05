@@ -3,13 +3,6 @@
     <main>
       <Nuxt />
     </main>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23109171-1" />
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'UA-23109171-1');
-    </script>
   </div>
 </template>
 

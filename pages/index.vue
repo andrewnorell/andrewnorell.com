@@ -1,6 +1,7 @@
 <template>
   <div class="u-container">
-    <h1>👋 <br>I’m Andrew Norell, a Tech Lead and Product Owner with a frontend dev background living in Minneapolis, MN.</h1>
+    <h1>👋 <br>I’m Andrew Norell, a Tech Lead with a frontend dev background living in Minneapolis, MN.</h1>
+    <p>You’ll find me hanging out where design meets code.</p>
     <a href="https://www.linkedin.com/in/andrewnorell/" title="Andrew Norell on LinkedIn">
       <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
         <g clip-path="url(#clip0)" fill="#46025D">
@@ -18,25 +19,39 @@
 
 <style lang="scss">
   .u-container {
-    max-width: 78rem;
+    max-width: 74rem;
     margin: 0 auto;
   }
 </style>
 
 <style lang="scss" scoped>
-  h1 {
+  h1,
+  p {
     color: $purple;
     font-size: 2.4rem;
     line-height: 1.5;
     font-weight: 600;
     text-align: center;
-    margin-bottom: 1.5em;
+    margin-bottom: 1.25em;
     font-family: $font-family-sans-serif;
+  }
+
+  p {
+    font-size: 1.8rem;
+    max-width: 28rem;
+    margin: 0 auto 1.75em;
   }
 
   @media (min-width: $screen-sm-min) {
     h1 {
       font-size: 4rem;
+      margin-bottom: 1em;
+    }
+
+    p {
+      font-size: 2.4rem;
+      max-width: 39rem;
+      margin-bottom: 2em;
     }
   }
 
