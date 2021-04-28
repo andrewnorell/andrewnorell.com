@@ -41,7 +41,8 @@ export default {
     // https://go.nuxtjs.dev/eslint
     '@nuxtjs/eslint-module',
     // https://go.nuxtjs.dev/stylelint
-    '@nuxtjs/stylelint-module'
+    '@nuxtjs/stylelint-module',
+    '@nuxtjs/google-analytics'
   ],
 
   // Modules (https://go.nuxtjs.dev/config-modules)
@@ -57,5 +58,14 @@ export default {
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {
+  },
+
+  googleAnalytics: {
+    id: 'UA-23109171-1'
+  },
+  publicRuntimeConfig: {
+    googleAnalytics: {
+      id: 'UA-23109171-1'
+    }
   }
 }
