@@ -3,6 +3,14 @@
     <main>
       <Nuxt />
     </main>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23109171-1" />
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-23109171-1');
+    </script>
   </div>
 </template>
 
@@ -41,7 +49,6 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  min-height: -webkit-fill-available;
   font-size: 1.8rem;
   line-height: 1.5;
   font-weight: 400;
